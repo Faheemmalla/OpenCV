@@ -22,10 +22,6 @@ while True:
     
     for (x,y,w,h) in faces:
         cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0), 2)
-        if len(faces) > 0:
-        # Add text at the top of the frame
-            cv2.putText(frame, f"Face Detected: {len(faces)}", (50, 50), 
-                   cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
     
     """
     
